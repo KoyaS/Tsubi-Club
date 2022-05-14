@@ -163,6 +163,16 @@ html, body {
   transform: translate(-50%, -50%);
   height: 7vh;
   filter: invert(1);
+  z-index: 1;
+}
+#rippleicon {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  height: 9vh;
+  filter: invert(1);
+  z-index: 0;
 }
 
 .backgroundvideo {

@@ -11,6 +11,7 @@ import rocketboots from "../../assets/HomeScreen/rocketboots.png";
 import twitter from "../../assets/logos/twitter.png";
 import instagram from "../../assets/logos/instagram.png";
 import spotify from "../../assets/logos/spotify.png";
+import ripple from "../../assets/HomeScreen/ripple.gif";
 
 function HomeScreen() {
   var position = 0;
@@ -48,6 +49,7 @@ function HomeScreen() {
       <img src={tsubihair} alt="Tsubi Hair" id="tsubihair" />
       <img src={bitchlogo} alt="Bitch Club Logo" id="bitchlogo" />
       <img src={scrollicon} alt="Scroll Icon" id="scrollicon" />
+      <img src={ripple} alt="ripple" id="rippleicon" />
       <a
         onClick={() => {
           var twittericon = document.getElementById("twitterlogo");
