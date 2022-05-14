@@ -1,0 +1,81 @@
+.GroundworksMain {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#header {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  width: 60vw;
+  z-index: 1;
+}
+
+.carouselslide {
+  max-width: 40vw;
+  max-height: 70vh;
+}
+
+.carouselimage {
+  max-width: 40vw;
+  max-height: 60vh !important;
+}
+
+.backblob {
+  position: fixed;
+  left: 15vw;
+  top: 10vh;
+  height: auto;
+  max-height: 15vh;
+  min-height: 9vh;
+}
+
+#backblob:hover {
+  opacity: 0;
+}
+
+#blob1 {
+  position: fixed;
+  width: 120px;
+  left: 70vw;
+  bottom: 10vh;
+  z-index: 0;
+}
+
+#blob2 {
+  position: fixed;
+  height: 200px;
+  right: 0;
+  top: 25vh;
+  transform: translate(40%);
+  z-index: 0;
+}
+
+#blob3 {
+  position: fixed;
+  height: 600px;
+  left: 30vw;
+  top: 15vh;
+  /* transform: translate(40%); */
+  z-index: 2;
+}
+
+#blob4 {
+  position: fixed;
+  height: 1200px;
+  left: 10vw;
+  bottom: 0;
+  transform: translate(0, 60%);
+  z-index: 0;
+}

@@ -1,13 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import HomeScreen from "./Screens/HomeScreen/HomeScreen";
+import GroundWorksScreen from "./Screens/GroundWorksScreen/GroundWorksScreen";
+import reportWebVitals from "./reportWebVitals";
+import { Route, NavLink, HashRouter, Routes } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// router reference:
+// https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+    {/* <HomeScreen /> */}
+    {/* <GroundWorksScreen /> */}
+    {/* <NavLink to="/" style={{zIndex: 10}}>HOME</NavLink>
+    <NavLink to="/GroundWorks" style={{zIndex: 10}}>GroundWorks</NavLink> */}
+    <Routes>
+    <Route exact path="/" element={<HomeScreen />} />
+    <Route exact path="/GroundWorks" element={<GroundWorksScreen />} />
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );
 

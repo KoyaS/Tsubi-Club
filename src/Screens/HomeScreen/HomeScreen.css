@@ -1,0 +1,186 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Main {
+  text-align: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+#bitchlogo {
+  width: 50vw;
+}
+
+#rocketboots {
+  position: fixed;
+  top: 40px;
+  left: 50px;
+  width: 150px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#tsubihair {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 0px;
+  width: 40vw;
+  min-width: 500px;
+  max-width: 1000px;
+}
+
+.logoicon {
+  width: 69px;
+  position: fixed;
+  top: 75px;
+  left: 85px;
+  z-index: 0;
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+/* #twitterlogo {
+  position:fixed;
+  top: 210px;
+  left: 85px;
+}
+
+#instagramlogo {
+  position:fixed;
+  top: 300px;
+  left: 85px;
+}
+
+#spotifylogo {
+  position:fixed;
+  top: 400px;
+  left: 85px;
+} */
+
+.clippedbutton {
+  color: black;
+  background-color: #b6b497;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+
+  font-family: "Press Start 2P", cursive;
+  z-index: 100000;
+
+  width: 25vw;
+  height: 45px;
+  --notchSize: 12px;
+
+  clip-path: polygon(
+    0% var(--notchSize),
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% var(--notchSize),
+    100% calc(100% - var(--notchSize)),
+    calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%,
+    0% calc(100% - var(--notchSize))
+  );
+}
+
+.clippedbutton:hover {
+  background-color: #5e5c80;
+}
+
+.clippedbuttonoutline {
+  background-color: black;
+  /* position: fixed;
+  bottom: 0;
+  transform: translate(15vw, -30vh); */
+  padding: 5px;
+
+  --notchSize: 15px;
+
+  clip-path: polygon(
+    0% var(--notchSize),
+    var(--notchSize) 0%,
+    calc(100% - var(--notchSize)) 0%,
+    100% var(--notchSize),
+    100% calc(100% - var(--notchSize)),
+    calc(100% - var(--notchSize)) 100%,
+    var(--notchSize) 100%,
+    0% calc(100% - var(--notchSize))
+  );
+  z-index: 1;
+}
+
+#stemsbutton {
+  position: fixed;
+  bottom: 0;
+  transform: translate(15vw, -30vh);
+}
+
+#groundworksbutton {
+  position: fixed;
+  bottom: 0;
+  transform: translate(55vw, -20vh);
+}
+
+#griddybutton {
+  position: fixed;
+  bottom: 0;
+  transform: translate(60vw, -10vh);
+}
+
+#verticalline {
+  height: 100vh;
+  border-left: 3px solid #b3b3b3;
+  position: fixed;
+  top: 0;
+  left: -20px;
+  transition: transform 0.5s;
+  z-index: 0;
+}
+
+#horizontalline {
+  width: 100vw;
+  border-top: 3px solid #b3b3b3;
+  position: fixed;
+  top: 0;
+  top: -20px;
+  transition: transform 0.5s;
+  z-index: 0;
+}
+
+#scrollicon {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  height: 7vh;
+  filter: invert(1);
+}
+
+.backgroundvideo {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.backgroundcontainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.3s;
+}
+
+.startoffscreen {
+  transform: translate(100vw, 0px);
+}
