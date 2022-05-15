@@ -23,6 +23,7 @@ const riift = require("../../assets/GroundWorksScreen/slides/ProdRiiFT.jpeg");
 const kvrohs = require("../../assets/GroundWorksScreen/slides/kvrohs.jpeg");
 const kvrohs2 = require("../../assets/GroundWorksScreen/slides/kvrohs2.jpeg");
 const kvrohs3 = require("../../assets/GroundWorksScreen/slides/kvrohs3.jpeg");
+const rxmorse = require("../../assets/GroundWorksScreen/slides/rxmorsevisuals.png");
 
 const backblob = require("../../assets/GroundWorksScreen/blobs/blobback.png");
 const highlightedbackblob = require("../../assets/GroundWorksScreen/blobs/highlightedblobback.png");
@@ -75,6 +76,10 @@ class StemsScreen extends Component {
     {
       image: riift,
       caption: "@ProdRiiFT",
+    },
+    {
+      image: rxmorse,
+      caption: "@rxmorsevisuals",
     },
   ];
 
